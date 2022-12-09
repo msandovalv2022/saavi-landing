@@ -1,0 +1,867 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  max-width: 100%;
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden; }
+
+p,
+li,
+a {
+  font-size: 16px; }
+
+@media screen and (max-width: 768px) {
+  body {
+    scroll-behavior: smooth; } }
+
+/*End Media Screen 768px*/
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 0.9em; } }
+
+/*End Media Screen 480px*/
+@media screen and (max-width: 376px) {
+  body {
+    font-size: 0.8rem; } }
+
+/* Special features */
+.boxShadow {
+  box-shadow: 0 0 10px 2px #aaa8a8; }
+
+.rounded {
+  border-radius: 50px; }
+
+.semiRounded {
+  border-radius: 10px; }
+
+.space {
+  padding-top: 30px; }
+
+.spaceSection {
+  padding-top: 80px; }
+
+.line {
+  display: block; }
+
+.noList {
+  list-style: none; }
+
+.noDecoration {
+  text-decoration: none; }
+
+.roundedImg {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: auto; }
+
+.cornerSpace {
+  padding-left: 100px;
+  padding-right: 100px; }
+
+@media screen and (max-width: 380px) {
+  .cornerSpace {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .spaceSection {
+    padding-top: 30px; } }
+
+/*----------Background-Colors------*/
+.bgBlue1 {
+  background-color: #4981F2; }
+
+.bgBlue2 {
+  background-color: #0B78BF; }
+
+.bgBlue3 {
+  background-color: #172573; }
+
+.bgGrey1 {
+  background-color: #ECEFF1; }
+
+.bgGrey2 {
+  background-color: #8F8F8E; }
+
+.bgGrey3 {
+  background-color: #333333; }
+
+/*----------Text colors------------*/
+.blueTx1 {
+  color: #4981F2; }
+
+.blueTx2 {
+  color: #0B78BF; }
+
+.blueTx3 {
+  color: #172573; }
+
+.whiteTx {
+  color: white; }
+
+.greyTx1 {
+  color: #ECEFF1; }
+
+.greyTx2 {
+  color: #8F8F8E; }
+
+.greyTx3 {
+  color: #333333; }
+
+/*----------Text effects------------*/
+.boldTx {
+  font-weight: bold; }
+
+.semiBoldTx {
+  font-weight: 400; }
+
+.lightTx {
+  font-weight: lighter; }
+
+.cTx {
+  text-align: center; }
+
+.rTx {
+  text-align: right; }
+
+.lTx {
+  text-align: left; }
+
+.jTx {
+  text-align: justify; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.lowercase {
+  text-transform: lowercase; }
+
+.noDecorateTx {
+  text-decoration: none; }
+
+/*----------Text aligns------------*/
+.cTx {
+  text-align: center; }
+
+.rTx {
+  text-align: right; }
+
+.lTx {
+  text-align: left; }
+
+.specialList li {
+  display: flex;
+  align-items: center; }
+  .specialList li img {
+    max-width: 20px;
+    margin-right: 20px; }
+
+@media screen and (max-width: 768px) {
+  .specialList li img {
+    max-width: 15px;
+    margin-right: 20px; } }
+
+.division {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.divisionBetween {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between; }
+
+.divisionAround {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around; }
+
+.divisionEvenly {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly; }
+
+@media screen and (max-width: 768px) {
+  .division {
+    flex-direction: column; } }
+
+@media screen and (max-width: 576px) {
+  .divisionBetween {
+    flex-direction: row;
+    flex-wrap: wrap; } }
+
+/*------Nav-------*/
+nav.sticky {
+  background-color: #fff; }
+  nav.sticky .header__nav--content li a {
+    color: #000; }
+
+.header__nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  /*--- Burger Nav---*/ }
+  .header__nav .header__nav--burger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease; }
+  .header__nav .header__nav--logo img {
+    max-height: 50px; }
+  .header__nav .header__nav--content {
+    display: flex;
+    justify-content: space-around; }
+    .header__nav .header__nav--content li {
+      margin-right: 50px; }
+      .header__nav .header__nav--content li a {
+        font-size: 12px;
+        font-style: italic;
+        letter-spacing: 2px;
+        color: white; }
+    .header__nav .header__nav--content ul {
+      display: flex;
+      justify-content: space-around; }
+  .header__nav .header__nav--social {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header__nav .header__nav--social li a img {
+      margin-right: 20px; }
+
+/*---Responsive NAV --*/
+.header__nav--burger {
+  display: none;
+  font-size: 1.2em; }
+
+@media screen and (max-width: 992px) {
+  .header__nav {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .header__nav .header__nav--content {
+      padding: 50px;
+      width: 80%;
+      background-color: #fff;
+      justify-content: space-evenly;
+      align-items: center; }
+      .header__nav .header__nav--content li a {
+        color: #0B78BF;
+        font-size: 16px; }
+    .header__nav .header__nav--logo img {
+      max-width: 70px; }
+    .header__nav .header__nav--burger div {
+      background-color: #172573; } }
+
+@media screen and (max-width: 768px) {
+  /*------ NAVBAR -------*/
+  .header__nav .header__nav--logo img {
+    max-height: 70px; }
+  .header__nav--content {
+    position: absolute;
+    right: 0;
+    height: 50vh;
+    top: 0vh;
+    flex-direction: column;
+    background-color: #EFEFEF;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in; }
+    .header__nav--content li {
+      opacity: 0; }
+  .header__nav--social li a img {
+    max-width: 25px; }
+  .header__nav--burger {
+    display: block;
+    cursor: pointer; }
+  .header__nav--contentActive {
+    transform: translate(0%); }
+  @keyframes header__nav--contentFade {
+    from {
+      opacity: 0;
+      transform: translateX(100px); }
+    to {
+      opacity: 1;
+      transform: translateX(0px); } }
+  .toggle .header__nav--burger-1 {
+    transform: rotate(-45deg) translate(-3px, 5px); }
+  .toggle .header__nav--burger-2 {
+    opacity: 0; }
+  .toggle .header__nav--burger-3 {
+    transform: rotate(45deg) translate(-5px, -9px); } }
+
+@media screen and (max-width: 663px) {
+  .header__nav .header__nav--content {
+    width: 70%; } }
+
+@media screen and (max-width: 576px) {
+  .header__nav .header__nav--content {
+    width: 70%; } }
+
+@media screen and (max-width: 480px) {
+  .header__nav .header__nav--content {
+    width: 70%; } }
+
+@media screen and (max-width: 380px) {
+  .header__nav {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .header__nav .header__nav--content {
+      padding: 20px;
+      width: 60%;
+      justify-content: space-evenly;
+      align-items: flex-start; } }
+
+@media screen and (max-width: 320px) {
+  .header__nav {
+    padding-left: 5px;
+    padding-right: 5px; }
+    .header__nav .header__nav--content {
+      padding: 20px;
+      width: 70%;
+      justify-content: space-evenly;
+      align-items: flex-start; }
+      .header__nav .header__nav--content li a {
+        font-size: 14px; } }
+
+footer {
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px;
+  height: 200px; }
+  footer .footer__name h2 {
+    font-size: 28px;
+    letter-spacing: 5px; }
+    footer .footer__name h2 span {
+      font-weight: lighter; }
+  footer .footer__name h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: lighter; }
+  footer .footer__links {
+    border-left: solid 2px #8F8F8E;
+    margin-top: 50px; }
+    footer .footer__links ul {
+      padding: 20px;
+      margin-left: 100px;
+      list-style: none; }
+      footer .footer__links ul li {
+        margin-bottom: 20px; }
+        footer .footer__links ul li a {
+          text-decoration: none;
+          color: #8F8F8E;
+          font-size: 12px; }
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    height: 200px; }
+    footer .footer__name {
+      margin-top: 150px; }
+      footer .footer__name h2 {
+        text-align: center; }
+      footer .footer__name h3 {
+        text-align: center; }
+    footer .footer__links {
+      border-left: solid 0;
+      border-top: solid 2px #8F8F8E;
+      margin-top: 50px; }
+      footer .footer__links ul {
+        width: 300px;
+        margin-right: 80px;
+        text-align: center; }
+        footer .footer__links ul li {
+          text-align: center;
+          margin-bottom: 20px; }
+          footer .footer__links ul li a {
+            text-align: center; } }
+
+@media screen and (max-width: 576px) {
+  footer .footer__name h2 {
+    font-size: 24px; }
+  footer .footer__links ul {
+    width: 200px; } }
+
+@media screen and (max-width: 480px) {
+  footer .footer__name h2 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 380px) {
+  footer {
+    height: 300px; }
+    footer .footer__name h2 {
+      font-size: 12px; } }
+
+.illuminating {
+  translate: 0 -100px;
+  z-index: 1;
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px; }
+  .illuminating img {
+    max-width: 280px; }
+  .illuminating h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-style: italic;
+    line-height: 30px; }
+    .illuminating h1 span {
+      font-weight: lighter;
+      font-size: 28px; }
+    .illuminating h1 .secondSpan {
+      font-size: 32px; }
+
+.saaviEnergia__img {
+  margin-right: 20px; }
+  .saaviEnergia__img img {
+    height: 600px; }
+
+.saaviEnergia__titles {
+  justify-self: start; }
+  .saaviEnergia__titles h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-style: italic;
+    color: #0B78BF; }
+  .saaviEnergia__titles h3 {
+    color: #172573;
+    font-size: 40px; }
+
+.saaviEnergia__info {
+  margin-left: 100px; }
+  .saaviEnergia__info h4 {
+    color: #4981F2;
+    font-size: 24px; }
+  .saaviEnergia__info ul li {
+    margin-bottom: 20px; }
+
+.caseStudy {
+  background-color: transparent;
+  background-image: url("../img/banner2.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .caseStudy__info {
+    color: white; }
+    .caseStudy__info h3 {
+      font-size: 14px;
+      letter-spacing: 2px;
+      font-style: italic; }
+    .caseStudy__info h2 {
+      font-size: 40px; }
+    .caseStudy__info ul {
+      margin-left: 90px; }
+      .caseStudy__info ul li {
+        margin-bottom: 10px; }
+  .caseStudy__note h3 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+    margin-top: 300px; }
+
+.deployment h2 {
+  font-size: 40px; }
+
+.deployment__services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .deployment__services article {
+    width: 250px;
+    height: 280px;
+    margin: 3px;
+    background-color: #172573;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    border: solid 2px #4981F2; }
+    .deployment__services article h3 {
+      font-style: italic;
+      letter-spacing: 2px; }
+    .deployment__services article img {
+      max-width: 100px; }
+    .deployment__services article p {
+      font-size: 13px;
+      text-align: center; }
+  .deployment__services .deployment__services--customers {
+    border-radius: 24px 0 0 24px; }
+  .deployment__services .deployment__services--construction {
+    border-radius: 0 24px 24px 0; }
+
+.deployment__solutions .or {
+  font-size: 40px;
+  font-weight: bold; }
+
+.deployment__solutions--info {
+  padding: 50px; }
+  .deployment__solutions--info h4 {
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 3px; }
+  .deployment__solutions--info-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; }
+    .deployment__solutions--info-cards article div {
+      background-color: white;
+      margin-bottom: 20px;
+      border-radius: 24px;
+      border: solid 2px #4981F2;
+      height: 150px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .deployment__solutions--info-cards article div img {
+        max-height: 100px;
+        margin-bottom: 20px; }
+      .deployment__solutions--info-cards article div p {
+        text-align: center;
+        font-size: 13px; }
+    .deployment__solutions--info-cards article .note {
+      padding: 10px;
+      background-color: white;
+      border-radius: 10px;
+      border: solid 2px #4981F2;
+      text-align: center;
+      color: #172573;
+      font-weight: 600; }
+    .deployment__solutions--info-cards span {
+      color: white;
+      font-size: 60px;
+      border-radius: 24px; }
+
+.smps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px; }
+  .smps h2 {
+    font-size: 40px; }
+  .smps__info ul {
+    list-style: none;
+    margin: 50px; }
+    .smps__info ul li {
+      margin-bottom: 20px; }
+      .smps__info ul li p {
+        font-size: 13px; }
+
+.contact {
+  background: linear-gradient(to left, #172573, #4981F2 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px; }
+  .contact h3 {
+    margin-top: 40px;
+    color: white;
+    font-size: 40px; }
+  .contact__cards {
+    display: flex;
+    translate: 50px 80px; }
+    .contact__cards div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      background-color: white;
+      border-radius: 10px;
+      border: solid 2px #4981F2;
+      margin: 15px;
+      padding: 20px;
+      width: 300px;
+      height: 115px; }
+      .contact__cards div img {
+        max-width: 15px;
+        align-self: flex-end; }
+      .contact__cards div h4 {
+        color: #172573;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px; }
+      .contact__cards div p {
+        color: #4981F2;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 15px; }
+      .contact__cards div a {
+        text-decoration: none;
+        color: #172573;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: .5px; }
+
+@media screen and (max-width: 768px) {
+  .saaviEnergia h3 {
+    font-size: 32px; }
+  .saaviEnergia__img img {
+    height: 400px;
+    margin-bottom: 20px; }
+  .saaviEnergia__info h4 {
+    color: #4981F2;
+    font-size: 24px; }
+  .saaviEnergia__info ul li {
+    margin-bottom: 10px; }
+    .saaviEnergia__info ul li p {
+      font-size: 12px; }
+  .caseStudy {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .caseStudy__info--titles h2 {
+      font-size: 32px; }
+      .caseStudy__info--titles h2 br {
+        display: none; }
+    .caseStudy__info ul {
+      margin-left: 20px; }
+      .caseStudy__info ul li p {
+        font-size: 14px; }
+    .caseStudy__note h3 {
+      margin-top: 280px;
+      font-size: 24px; }
+  .deployment h2 {
+    font-size: 32px; }
+  .deployment__services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .deployment__services article h3 {
+      font-style: italic;
+      letter-spacing: 2px; }
+  .deployment__solutions--info {
+    padding: 50px; }
+    .deployment__solutions--info h4 {
+      font-style: italic;
+      font-size: 18px;
+      letter-spacing: 3px; }
+    .deployment__solutions--info-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      .deployment__solutions--info-cards article div {
+        width: 400px;
+        height: 150px; }
+  .smps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; }
+    .smps h2 {
+      font-size: 32px; }
+      .smps h2 br {
+        display: none; }
+    .smps__info ul {
+      list-style: none;
+      margin: 20px; }
+      .smps__info ul li {
+        margin-bottom: 10px; }
+        .smps__info ul li p {
+          font-size: 12px; }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px; }
+    .contact h3 {
+      translate: 0 50px;
+      color: white;
+      font-size: 40px; }
+    .contact__cards {
+      justify-content: center;
+      translate: 0px 50px; } }
+
+@media screen and (max-width: 663px) {
+  .illuminating {
+    translate: 0 -120px;
+    padding: 20px; }
+    .illuminating img {
+      max-width: 150px; }
+    .illuminating h1 {
+      font-size: 40px; }
+  .caseStudy {
+    height: 800px;
+    flex-direction: column; }
+    .caseStudy__info--titles {
+      margin-top: 30px; }
+    .caseStudy__note h3 {
+      margin-top: 0px;
+      margin-left: 0px; }
+  .deployment h2 {
+    font-size: 28px; }
+  .deployment__services article {
+    width: 450px;
+    height: 280px;
+    margin: 2px; }
+  .deployment__services .deployment__services--customers {
+    border-radius: 24px 24px 0 0; }
+  .deployment__services .deployment__services--construction {
+    border-radius: 0 0 24px 24px; }
+  .deployment__solutions .or {
+    font-size: 28px; }
+  .deployment__solutions--info-cards article div {
+    width: 200px; }
+  .contact {
+    height: 350px; }
+    .contact__cards {
+      display: flex;
+      flex-wrap: wrap; } }
+
+@media screen and (max-width: 576px) {
+  .saaviEnergia h3 {
+    font-size: 28px; }
+  .saaviEnergia__info h4 {
+    color: #4981F2;
+    font-size: 20px; }
+  .caseStudy__info--titles h2 {
+    font-size: 28px; }
+  .caseStudy__info ul li {
+    margin-bottom: 20px; }
+    .caseStudy__info ul li p {
+      font-size: 12px; }
+  .caseStudy__note h3 {
+    font-size: 20px; }
+  .smps {
+    padding: 20px; }
+    .smps h2 {
+      font-size: 28px; }
+      .smps h2 br {
+        display: none; }
+    .smps__info ul {
+      list-style: none;
+      margin: 10px; }
+      .smps__info ul li {
+        margin-bottom: 10px; }
+        .smps__info ul li p {
+          font-size: 12px; } }
+
+@media screen and (max-width: 480px) {
+  .saaviEnergia__info {
+    margin-left: 20px; }
+  .saaviEnergia__titles h2 {
+    font-size: 12px; }
+  .saaviEnergia__titles h3 {
+    font-size: 20px; }
+  .caseStudy__info--titles h3 {
+    font-size: 11px; }
+  .caseStudy__info--titles h2 {
+    font-size: 24px; }
+  .caseStudy__info ul li {
+    margin-bottom: 20px; }
+    .caseStudy__info ul li p {
+      font-size: 12px; }
+  .caseStudy__note h3 {
+    margin-top: 330px;
+    margin-left: 50px;
+    font-size: 20px; }
+  .deployment h2 {
+    font-size: 20px; }
+  .deployment__solutions .or {
+    font-size: 20px;
+    font-weight: bold; }
+  .deployment__solutions--info {
+    padding: 10px; }
+  .smps {
+    padding: 20px; }
+    .smps h2 {
+      font-size: 20px; }
+  .contact h3 {
+    font-size: 32px; } }
+
+@media screen and (max-width: 380px) {
+  .illuminating {
+    margin-top: 70px;
+    height: 700px; }
+    .illuminating img {
+      max-width: 100px; }
+    .illuminating h1 {
+      font-size: 24px; }
+      .illuminating h1 span {
+        font-size: 20px; }
+      .illuminating h1 .secondSpan {
+        font-size: 22px; }
+  .saaviEnergia__img {
+    margin-right: 0px; }
+    .saaviEnergia__img img {
+      max-width: 300px; }
+  .saaviEnergia__info {
+    margin-left: 0px; }
+  .saaviEnergia__titles h2 {
+    font-size: 12px; }
+  .saaviEnergia__titles h3 {
+    font-size: 20px; }
+  .caseStudy {
+    height: 800px;
+    flex-direction: column; }
+    .caseStudy__info--titles {
+      margin-top: 30px; }
+    .caseStudy__note h3 {
+      margin-top: 0px;
+      margin-left: 0px;
+      font-size: 16px; }
+  .deployment__solutions--info {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .deployment__solutions--info-cards article div {
+      padding: 10px; }
+  .contact h3 {
+    padding-top: 60px; } }
+
+@media screen and (max-width: 320px) {
+  .deployment__solutions--info {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .deployment__solutions--info-cards article div {
+      padding: 0px; }
+  .contact h3 {
+    padding-top: 60px; }
+  .contact__cards {
+    display: flex;
+    flex-wrap: wrap; } }

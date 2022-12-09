@@ -1,0 +1,21 @@
+.specialList{
+    li{
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .specialList{
+        li{
+            img{
+                max-width: 15px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

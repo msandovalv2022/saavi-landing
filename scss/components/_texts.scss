@@ -1,0 +1,67 @@
+/*----------Text colors------------*/
+.blueTx1{
+    color: $blue1;
+}
+.blueTx2{
+    color: $blue2;
+}
+.blueTx3{
+    color: $blue3;
+}
+.whiteTx{
+    color: white;
+}
+.greyTx1{
+    color: $grey1;
+}
+.greyTx2{
+    color: $grey2;
+}
+.greyTx3{
+    color: $grey3;
+}
+
+
+/*----------Text effects------------*/
+
+.boldTx{
+    font-weight: bold;
+}
+.semiBoldTx{
+    font-weight: 400;
+}
+.lightTx{
+    font-weight: lighter;
+}
+.cTx{
+    text-align: center;
+}
+.rTx{
+    text-align: right;
+}
+.lTx{
+    text-align: left;
+}
+.jTx{
+    text-align: justify;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.noDecorateTx{
+    text-decoration: none;
+}
+
+/*----------Text aligns------------*/
+.cTx{
+    text-align: center;
+}
+.rTx{
+    text-align: right;
+}
+.lTx{
+    text-align: left;
+}

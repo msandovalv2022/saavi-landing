@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #0071bc;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        opacity: 0.8;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.83" y1="0.226" x2="0.219" y2="0.785" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#151f6d"/>
+      <stop offset="1" stop-color="#29abff"/>
+    </linearGradient>
+  </defs>
+  <g id="bullet" transform="translate(12349 2907)">
+    <g id="Elipse_56" data-name="Elipse 56" class="cls-1" transform="translate(-12349 -2907)">
+      <circle class="cls-3" cx="16" cy="16" r="16"/>
+      <circle class="cls-4" cx="16" cy="16" r="15"/>
+    </g>
+    <circle id="Elipse_55" data-name="Elipse 55" class="cls-2" cx="12" cy="12" r="12" transform="translate(-12345 -2903)"/>
+  </g>
+</svg>

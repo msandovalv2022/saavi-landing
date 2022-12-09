@@ -1,0 +1,725 @@
+
+.illuminating{
+    translate: 0 -100px;
+    z-index: 1;
+    // background-color: transparent;
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    img{
+        max-width: 280px;
+    }
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 60px;
+        letter-spacing: 4px;
+        font-style: italic;
+        line-height: 30px;
+        span{
+            font-weight: lighter;
+            font-size: 28px;
+        }
+        .secondSpan{
+            font-size: 32px;
+        }
+    }
+}
+.saaviEnergia{
+    &__img{
+        margin-right: 20px;
+        img{
+            height: 600px;
+        }
+    }
+    &__titles{
+        justify-self: start;
+        h2{
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-style: italic;
+            color: $blue2;
+        }
+        h3{
+            color: $blue3;
+            font-size: 40px;
+        }
+    }
+    &__info{
+        margin-left: 100px;
+        h4{
+            color: $blue1;
+            font-size: 24px;
+        }
+        ul{
+            li{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.caseStudy{
+    background-color: transparent;
+    background-image: url("../img/banner2.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size:cover;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__info{
+        color: white;
+        h3{
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-style: italic;
+        }
+        h2{
+            font-size: 40px;
+        }
+        ul{
+            margin-left: 90px;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__note{
+        h3{
+            font-size: 32px;
+            letter-spacing: 3px;
+            font-weight: 600;
+            font-style: italic;
+            color: white;
+            margin-top: 300px;
+        }
+    }
+}
+
+.deployment{
+    h2{
+        font-size: 40px;
+    }
+    &__services{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        article{
+            h3{
+                font-style: italic;
+                letter-spacing: 2px;
+            }
+            width: 250px;
+            height: 280px;
+            margin: 3px;
+            background-color: $blue3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            border: solid 2px $blue1;
+            img{
+                max-width: 100px;
+            }
+            p{
+                font-size: 13px;
+                text-align: center;
+            }
+        }
+        .deployment__services--customers{
+            border-radius: 24px 0 0 24px;
+        }
+        .deployment__services--construction{
+            border-radius: 0 24px 24px 0;
+        }
+    }
+    &__solutions{
+        .or{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        &--info{
+            padding: 50px;
+            h4{
+                font-style: italic;
+                font-size: 18px;
+                letter-spacing: 3px;
+            }
+            &-cards{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                article{
+                    div{
+                        background-color: white;
+                        margin-bottom: 20px;
+                        border-radius: 24px;
+                        border: solid 2px $blue1;
+                        height: 150px;
+                        padding: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            max-height: 100px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            text-align: center;
+                            font-size: 13px;
+                        }
+                    }
+                    .note{
+                        padding: 10px;
+                        background-color: white;
+                        border-radius: 10px;
+                        border: solid 2px $blue1;
+                        text-align: center;
+                        color: $blue3;
+                        font-weight:600;
+                    }
+                }
+                span{
+                    color: white;
+                    font-size: 60px;
+                    border-radius: 24px;
+                }
+            }
+        }
+    }
+}
+.smps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    h2{
+        font-size: 40px;
+    }
+    &__info{
+        ul{
+            list-style: none;
+            margin: 50px;
+            li{
+                margin-bottom: 20px;
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.contact{
+    background: linear-gradient(to left, $blue3, $blue1 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    h3{
+        margin-top: 40px;
+        color: white;
+        font-size: 40px;
+    }
+    &__cards{
+        display: flex;
+        translate: 50px 80px;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items:flex-start;
+            background-color: white;
+            border-radius: 10px;
+            border: solid 2px $blue1;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            height: 115px;
+            img{
+                max-width: 15px;
+                align-self:flex-end;
+            }
+            h4{
+                color: $blue3;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            p{
+                color: $blue1;
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-bottom: 15px;
+            }
+            a{
+                text-decoration: none;
+                color: $blue3;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: .5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .saaviEnergia{
+        h3{
+            font-size: 32px;
+        }
+        &__img{
+            img{
+                height: 400px;
+                margin-bottom: 20px;
+            }
+        }
+        &__info{
+            h4{
+                color: $blue1;
+                font-size: 24px;
+            }
+            ul{
+                li{
+                    margin-bottom: 10px;
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .caseStudy{
+        padding-left: 20px;
+        padding-right: 20px;
+        &__info{
+            &--titles{
+                h2{
+                    font-size: 32px;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+            ul{
+                margin-left: 20px;
+                li{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &__note{
+            h3{
+                margin-top: 280px;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .deployment{
+        h2{
+            font-size: 32px;
+        }
+        &__services{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            article{
+                h3{
+                    font-style: italic;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        &__solutions{
+            &--info{
+                padding: 50px;
+                h4{
+                    font-style: italic;
+                    font-size: 18px;
+                    letter-spacing: 3px;
+                }
+                &-cards{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    article{
+                        div{
+                            width: 400px;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .smps{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        h2{
+            font-size: 32px;
+            br{
+                display: none;
+            }
+        }
+        &__info{
+            ul{
+                list-style: none;
+                margin: 20px;
+                li{
+                    margin-bottom: 10px;
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+        h3{
+            translate: 0 50px;
+            color: white;
+            font-size: 40px;
+        }
+        &__cards{
+            justify-content: center;
+            translate: 0px 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 663px){
+    .illuminating{
+        translate: 0 -120px;
+        padding: 20px;
+        img{
+            max-width: 150px;
+        }
+        h1{
+            font-size: 40px;
+        }
+    }
+    
+    .caseStudy{
+        height: 800px;
+        flex-direction: column;
+        &__info{
+            &--titles{
+                margin-top: 30px;
+            }
+        }
+        &__note{
+            h3{
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+        }
+    }
+
+    .deployment{
+        h2{
+            font-size: 28px;
+        }
+        &__services{
+            article{
+                width: 450px;
+                height: 280px;
+                margin: 2px;
+            }
+            .deployment__services--customers{
+                border-radius: 24px 24px 0 0;
+            }
+            .deployment__services--construction{
+                border-radius: 0 0 24px 24px;
+            }
+        }
+        &__solutions{
+            .or{
+                font-size: 28px;
+            }
+            &--info{
+                &-cards{
+                    article{
+                        div{
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        height: 350px;
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .saaviEnergia{
+        h3{
+            font-size: 28px;
+        }
+        &__info{
+            h4{
+                color: $blue1;
+                font-size: 20px;
+            }
+        }
+    }
+    .caseStudy{
+        &__info{
+            &--titles{
+                h2{
+                    font-size: 28px;
+                }
+            }
+            ul{
+                li{
+                    margin-bottom: 20px;
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        &__note{
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .smps{
+        padding: 20px;
+        h2{
+            font-size: 28px;
+            br{
+                display: none;
+            }
+        }
+        &__info{
+            ul{
+                list-style: none;
+                margin: 10px;
+                li{
+                    margin-bottom: 10px;
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .saaviEnergia{
+        &__info{
+            margin-left: 20px;
+        }
+        &__titles{
+            h2{
+                font-size: 12px;
+            }
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+    .caseStudy{
+        &__info{
+            &--titles{
+                h3{
+                    font-size: 11px;
+                }
+                h2{
+                    font-size: 24px;
+                }
+            }
+            ul{
+                li{
+                    margin-bottom: 20px;
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        &__note{
+            h3{
+                margin-top: 330px;
+                margin-left: 50px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .deployment{
+        h2{
+            font-size: 20px;
+        }
+        &__solutions{
+            .or{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            &--info{
+                padding: 10px;
+            }
+        }
+    }
+
+    .smps{
+        padding: 20px;
+        h2{
+            font-size: 20px;
+        }
+    }
+
+    .contact{
+        h3{
+            font-size: 32px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 380px){
+    .illuminating{
+        margin-top: 70px;
+        height: 700px;
+        img{
+            max-width: 100px;
+        }
+        h1{
+            font-size: 24px;
+            span{
+                font-size: 20px;
+            }
+            .secondSpan{
+                font-size: 22px;
+            }
+        }
+    }
+    .saaviEnergia{
+        &__img{
+            margin-right: 0px;
+            img{
+                max-width: 300px;
+            }
+        }
+        &__info{
+            margin-left: 0px;
+        }
+        &__titles{
+            h2{
+                font-size: 12px;
+            }
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+    .caseStudy{
+        height: 800px;
+        flex-direction: column;
+        &__info{
+            &--titles{
+                margin-top: 30px;
+            }
+        }
+        &__note{
+            h3{
+                margin-top: 0px;
+                margin-left: 0px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .deployment{
+        &__solutions{
+            &--info{
+                padding-top: 60px;
+                padding-bottom: 60px;
+                &-cards{
+                    article{
+                        div{
+                           padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        h3{
+            padding-top: 60px;
+        }
+    }
+    
+}
+@media screen and (max-width: 320px){
+    .deployment{
+        &__solutions{
+            &--info{
+                padding-top: 60px;
+                padding-bottom: 60px;
+                &-cards{
+                    article{
+                        div{
+                           padding: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+        h3{
+            padding-top: 60px;
+        }
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    
+}

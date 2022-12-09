@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #3b5998;
+      }
+    </style>
+  </defs>
+  <g id="icon-facebook" transform="translate(9638 4493)">
+    <circle id="Elipse_52" data-name="Elipse 52" class="cls-1" cx="20" cy="20" r="20" transform="translate(-9638 -4493)"/>
+    <g id="fb" transform="translate(-9636.823 -4491.823)">
+      <path id="Exclusión_2" data-name="Exclusión 2" class="cls-2" d="M18.823,37.648A18.824,18.824,0,0,1,5.513,5.513a18.824,18.824,0,0,1,26.62,26.621A18.7,18.7,0,0,1,18.823,37.648Zm-3.44-20.2V20.2h2.064v5.5H20.2V20.2h2.065l.688-2.753H20.2V15.384a.688.688,0,0,1,.688-.688h2.065V11.944H20.887a3.444,3.444,0,0,0-3.44,3.44v2.064Z" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>
