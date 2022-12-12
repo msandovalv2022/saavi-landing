@@ -236,12 +236,6 @@ nav.sticky {
     .header__nav .header__nav--content ul {
       display: flex;
       justify-content: space-around; }
-  .header__nav .header__nav--social {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .header__nav .header__nav--social li a img {
-      margin-right: 20px; }
 
 /*---Responsive NAV --*/
 .header__nav--burger {
@@ -284,8 +278,6 @@ nav.sticky {
     transition: transform 0.5s ease-in; }
     .header__nav--content li {
       opacity: 0; }
-  .header__nav--social li a img {
-    max-width: 25px; }
   .header__nav--burger {
     display: block;
     cursor: pointer; }
@@ -562,11 +554,9 @@ footer {
         font-size: 13px; }
     .deployment__solutions--info-cards article .note {
       padding: 10px;
-      background-color: white;
       border-radius: 10px;
-      border: solid 2px #4981F2;
       text-align: center;
-      color: #172573;
+      color: white;
       font-weight: 600; }
     .deployment__solutions--info-cards span {
       color: white;
@@ -613,7 +603,7 @@ footer {
       margin: 15px;
       padding: 20px;
       width: 300px;
-      height: 115px; }
+      height: 150px; }
       .contact__cards div img {
         max-width: 15px;
         align-self: flex-end; }
@@ -633,7 +623,8 @@ footer {
         color: #172573;
         font-size: 13px;
         font-weight: 600;
-        letter-spacing: .5px; }
+        letter-spacing: .5px;
+        padding-bottom: 20px; }
 
 @media screen and (max-width: 768px) {
   .saaviEnergia h3 {

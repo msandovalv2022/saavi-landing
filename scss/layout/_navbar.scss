@@ -8,7 +8,6 @@ nav.sticky{
             }
         }
     }
-    
 }
 .header__nav {
     background-color: transparent;
@@ -57,19 +56,6 @@ nav.sticky{
             display: flex;
             justify-content: space-around;
         }
-    }
-    .header__nav--social{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        li{
-            a{
-                img{
-                    margin-right: 20px;
-                }
-            }
-        }
-        
     }
 }
 
@@ -136,15 +122,6 @@ nav.sticky{
 
         li {
             opacity: 0;
-        }
-    }
-    .header__nav--social{
-        li{
-            a{
-                img{
-                    max-width: 25px;
-                }
-            }
         }
     }
 
