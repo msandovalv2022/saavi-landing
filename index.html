@@ -9,7 +9,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
+
     <title>Saavi - Power Mobile Solutions</title>
   </head>
   <body>
@@ -69,10 +71,10 @@
 
     <main>
       <section id="saaviEnergia" class="division saaviEnergia cornerSpace">
-        <div class="saaviEnergia__img">
+        <div data-aos="fade-right" class="saaviEnergia__img">
           <img src="img/Imagen2.png" alt="" />
         </div>
-        <article class="saaviEnergia__titles">
+        <article data-aos="fade-left" class="saaviEnergia__titles">
           <h2>A SAAVI ENERGÍA COMPANY</h2>
 
           <div class="space"></div>
@@ -133,7 +135,7 @@
       <div class="spaceSection"></div>
 
       <section id="caseStudy" class="caseStudy">
-          <article class="caseStudy__info">
+          <article data-aos="fade-down" class="caseStudy__info">
             <div class="caseStudy__info--titles">
               <h3>BAJA CALIFORNIA, MEXICO</h3>
               <div class="space"></div>
@@ -173,7 +175,7 @@
             </ul>
           </article>
 
-          <article class="caseStudy__note">
+          <article data-aos="fade-up" class="caseStudy__note">
             <h3>
               Illuminating the state <br />
               during the summer <br />
@@ -189,7 +191,7 @@
         <h2 class="cTx blueTx3">Fleet Deployment Service</h2>
         <div class="spaceSection"></div>
         
-        <article class="deployment__services">
+        <article data-aos="fade-right" class="deployment__services">
           <article class="deployment__services--customers">
             <h3>CUSTOMER´S</h3>
             <img src="img/icon-fds-customers.png" alt="" />
@@ -234,7 +236,7 @@
         </article>
         <div class="spaceSection"></div>
 
-        <article class="deployment__solutions">
+        <article data-aos="fade-left" class="deployment__solutions">
           <p class="blueTx3 cTx or">Or any solution in-between, as needed...</p>
 
           <div class="spaceSection"></div>
@@ -288,7 +290,7 @@
       <div class="spaceSection"></div>
 
       <section id="smps" class="bgGrey smps cornerSpace">
-        <article>
+        <article data-aos="fade-down-left">
           <h2 class="lTx blueTx3">
             SMPS currently has available a fleet of three <br /> TM2500
             Gen 8 Multifuel Power Gensets
@@ -357,9 +359,9 @@
       <div class="spaceSection"></div>
 
       <section id="contact" class="contact">
-        <h3>Contact Details</h3>
+        <h3 data-aos="fade-right">Contact Details</h3>
         <div class="contact__cards">
-          <div>
+          <div data-aos="flip-left">
             <img src="img/saavi-isotipo.png" alt="" />
             <h4>Alfredo Salvo</h4>
             <p>SVP Strategy & Capital Markets</p>
@@ -368,7 +370,7 @@
             <a href="">alfredo.salvo@saavienergysolutions.com</a>
           </div>
 
-          <div>
+          <div data-aos="flip-left">
             <img src="img/saavi-isotipo.png" alt="" />
             <h4>Juan Pablo Jimeno</h4>
             <p>Business Development Director</p>
@@ -393,5 +395,9 @@
       </footer>
     </main>
     <script src="js/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
