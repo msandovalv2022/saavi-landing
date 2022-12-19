@@ -361,7 +361,7 @@ footer {
           color: #8F8F8E;
           font-size: 12px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -489,17 +489,16 @@ footer {
     margin-top: 300px; }
 
 .deployment h2 {
-  font-size: 40px; }
+  font-size: 40px;
+  width: 100%; }
 
 .deployment__services {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr); }
   .deployment__services article {
-    width: 250px;
+    width: 100%;
     height: 280px;
-    margin: 3px;
     background-color: #172573;
     display: flex;
     flex-direction: column;
@@ -515,9 +514,17 @@ footer {
     .deployment__services article p {
       font-size: 13px;
       text-align: center; }
-  .deployment__services .deployment__services--customers {
+  .deployment__services .deployment__services-customers {
+    grid-column: 1 / 2;
     border-radius: 24px 0 0 24px; }
-  .deployment__services .deployment__services--construction {
+  .deployment__services .deployment__services-engineering {
+    grid-column: 2 / 3; }
+  .deployment__services .deployment__services-contracting {
+    grid-column: 3 / 4; }
+  .deployment__services .deployment__services-shipment {
+    grid-column: 4 / 5; }
+  .deployment__services .deployment__services-construction {
+    grid-column: 5 / 6;
     border-radius: 0 24px 24px 0; }
 
 .deployment__solutions .or {
@@ -623,15 +630,122 @@ footer {
         color: #172573;
         font-size: 13px;
         font-weight: 600;
-        letter-spacing: .5px;
+        letter-spacing: 0.5px;
         padding-bottom: 20px; }
+
+@media screen and (max-width: 1280px) {
+  .deployment__services {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .deployment__services article {
+      width: 100%;
+      height: 400px; }
+      .deployment__services article img {
+        max-width: 100px; }
+      .deployment__services article p {
+        font-size: 13px;
+        text-align: center; }
+    .deployment__services .deployment__services-customers {
+      grid-column: 1 / 3;
+      border-radius: 24px 0 0 0; }
+    .deployment__services .deployment__services-engineering {
+      grid-column: 3 / 5; }
+    .deployment__services .deployment__services-contracting {
+      grid-column: 5 / 7;
+      border-radius: 0 24px 0 0; }
+    .deployment__services .deployment__services-shipment {
+      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+      border-radius: 0 0 0 24px; }
+    .deployment__services .deployment__services-construction {
+      grid-column: 4 / 7;
+      grid-row: 2 / 3;
+      border-radius: 0 0 24px 0; } }
+
+@media screen and (max-width: 1024px) {
+  .saaviEnergia h3 {
+    font-size: 28px; }
+  .saaviEnergia__img {
+    margin-right: 50px; }
+    .saaviEnergia__img img {
+      height: 400px; }
+  .saaviEnergia__info {
+    translate: 0 -20px;
+    margin-left: 50px; }
+    .saaviEnergia__info h4 {
+      color: #4981F2;
+      font-size: 22px; }
+    .saaviEnergia__info ul li {
+      margin-bottom: 10px; }
+      .saaviEnergia__info ul li p {
+        font-size: 12px; }
+  .deployment__services {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+    .deployment__services article {
+      height: 350px; }
+      .deployment__services article img {
+        max-width: 100px; }
+      .deployment__services article p {
+        font-size: 13px;
+        text-align: center; }
+    .deployment__services .deployment__services-customers {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      border-radius: 24px 0 0 0; }
+    .deployment__services .deployment__services-engineering {
+      grid-column: 4 / 7;
+      grid-row: 1 / 2;
+      border-radius: 0 24px 0 0; }
+    .deployment__services .deployment__services-contracting {
+      grid-column: 1 / 4;
+      border-radius: 0 0 0 0;
+      grid-row: 2 / 3; }
+    .deployment__services .deployment__services-shipment {
+      grid-column: 4 / 7;
+      grid-row: 2 / 3;
+      border-radius: 0 0 0 0; }
+    .deployment__services .deployment__services-construction {
+      grid-column: 1 / 7;
+      grid-row: 3 / 4;
+      border-radius: 0 0 24px 24px; }
+  .deployment__solutions--info {
+    padding: 50px; }
+    .deployment__solutions--info h4 {
+      font-style: italic;
+      font-size: 18px;
+      letter-spacing: 3px; }
+    .deployment__solutions--info-cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      .deployment__solutions--info-cards article div {
+        width: 500px;
+        height: 150px; }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px; }
+    .contact h3 {
+      translate: 0 50px;
+      color: white;
+      font-size: 40px; }
+    .contact__cards {
+      justify-content: center;
+      translate: 0px 50px; } }
 
 @media screen and (max-width: 768px) {
   .saaviEnergia h3 {
     font-size: 32px; }
-  .saaviEnergia__img img {
-    height: 400px;
-    margin-bottom: 20px; }
+  .saaviEnergia__img {
+    margin-right: 0px; }
+    .saaviEnergia__img img {
+      height: 400px;
+      margin-bottom: 20px; }
   .saaviEnergia__info h4 {
     color: #4981F2;
     font-size: 24px; }
@@ -655,29 +769,10 @@ footer {
       font-size: 24px; }
   .deployment h2 {
     font-size: 32px; }
-  .deployment__services {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .deployment__services article h3 {
-      font-style: italic;
-      letter-spacing: 2px; }
-  .deployment__solutions--info {
-    padding: 50px; }
-    .deployment__solutions--info h4 {
-      font-style: italic;
-      font-size: 18px;
-      letter-spacing: 3px; }
-    .deployment__solutions--info-cards {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap; }
-      .deployment__solutions--info-cards article div {
-        width: 400px;
-        height: 150px; }
+  .deployment__services article h3 {
+    letter-spacing: 2px; }
+  .deployment__solutions--info-cards article div {
+    width: 400px; }
   .smps {
     display: flex;
     flex-direction: column;
@@ -694,22 +789,9 @@ footer {
       .smps__info ul li {
         margin-bottom: 10px; }
         .smps__info ul li p {
-          font-size: 12px; }
-  .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 180px; }
-    .contact h3 {
-      translate: 0 50px;
-      color: white;
-      font-size: 40px; }
-    .contact__cards {
-      justify-content: center;
-      translate: 0px 50px; } }
+          font-size: 12px; } }
 
-@media screen and (max-width: 663px) {
+@media screen and (max-width: 669px) {
   .illuminating {
     translate: 0 -120px;
     padding: 20px; }
@@ -727,18 +809,25 @@ footer {
       margin-left: 0px; }
   .deployment h2 {
     font-size: 28px; }
-  .deployment__services article {
-    width: 450px;
-    height: 280px;
-    margin: 2px; }
-  .deployment__services .deployment__services--customers {
-    border-radius: 24px 24px 0 0; }
-  .deployment__services .deployment__services--construction {
-    border-radius: 0 0 24px 24px; }
+  .deployment__services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .deployment__services article {
+      width: 450px;
+      height: 280px;
+      margin: 2px; }
+    .deployment__services .deployment__services-customers {
+      border-radius: 24px 24px 0 0; }
+    .deployment__services .deployment__services-engineering {
+      border-radius: 0 0 0 0; }
+    .deployment__services .deployment__services-construction {
+      border-radius: 0 0 24px 24px; }
   .deployment__solutions .or {
     font-size: 28px; }
   .deployment__solutions--info-cards article div {
-    width: 200px; }
+    width: 300px; }
   .contact {
     height: 350px; }
     .contact__cards {
