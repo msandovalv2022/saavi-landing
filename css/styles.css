@@ -67,6 +67,11 @@ a {
   padding-left: 100px;
   padding-right: 100px; }
 
+@media screen and (max-width: 576px) {
+  .cornerSpace {
+    padding-left: 50px;
+    padding-right: 50px; } }
+
 @media screen and (max-width: 380px) {
   .cornerSpace {
     padding-left: 20px;
@@ -388,6 +393,10 @@ footer {
           margin-bottom: 20px; }
           footer .footer__links ul li a {
             text-align: center; } }
+
+@media screen and (max-width: 669px) {
+  footer {
+    height: 300px; } }
 
 @media screen and (max-width: 576px) {
   footer .footer__name h2 {
@@ -739,6 +748,10 @@ footer {
       translate: 0px 50px; } }
 
 @media screen and (max-width: 768px) {
+  .illuminating img {
+    max-width: 150px; }
+  .illuminating h1 {
+    font-size: 32px; }
   .saaviEnergia h3 {
     font-size: 32px; }
   .saaviEnergia__img {
@@ -863,26 +876,40 @@ footer {
           font-size: 12px; } }
 
 @media screen and (max-width: 480px) {
+  .illuminating img {
+    max-width: 120px; }
+  .illuminating h1 {
+    font-size: 28px; }
+    .illuminating h1 span {
+      font-size: 24px; }
+      .illuminating h1 span b {
+        font-size: 24px; }
   .saaviEnergia__info {
     margin-left: 20px; }
   .saaviEnergia__titles h2 {
     font-size: 12px; }
   .saaviEnergia__titles h3 {
     font-size: 20px; }
-  .caseStudy__info--titles h3 {
-    font-size: 11px; }
-  .caseStudy__info--titles h2 {
-    font-size: 24px; }
-  .caseStudy__info ul li {
-    margin-bottom: 20px; }
-    .caseStudy__info ul li p {
-      font-size: 12px; }
-  .caseStudy__note h3 {
-    margin-top: 330px;
-    margin-left: 50px;
-    font-size: 20px; }
+  .caseStudy__info {
+    translate: 0 100px; }
+    .caseStudy__info--titles h3 {
+      font-size: 11px; }
+    .caseStudy__info--titles h2 {
+      font-size: 24px; }
+    .caseStudy__info ul li {
+      margin-bottom: 20px; }
+      .caseStudy__info ul li p {
+        font-size: 12px; }
+  .caseStudy__note {
+    translate: 0 -100px; }
+    .caseStudy__note h3 {
+      margin-top: 330px;
+      margin-left: 50px;
+      font-size: 20px; }
   .deployment h2 {
     font-size: 20px; }
+  .deployment__services article {
+    max-width: 370px; }
   .deployment__solutions .or {
     font-size: 20px;
     font-weight: bold; }
@@ -926,6 +953,8 @@ footer {
       margin-top: 0px;
       margin-left: 0px;
       font-size: 16px; }
+  .deployment__services article {
+    max-width: 335px; }
   .deployment__solutions--info {
     padding-top: 60px;
     padding-bottom: 60px; }

@@ -419,7 +419,7 @@
       }
     }
   }
-    .contact {
+  .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -438,6 +438,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  .illuminating {
+    img {
+      max-width: 150px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+  }
   .saaviEnergia {
     h3 {
       font-size: 32px;
@@ -681,6 +689,20 @@
 }
 
 @media screen and (max-width: 480px) {
+  .illuminating {
+    img{
+        max-width: 120px;
+    }
+    h1{
+        font-size: 28px;
+        span{
+            font-size: 24px;
+            b{
+                font-size: 24px;
+            }
+        }
+    }
+  }
   .saaviEnergia {
     &__info {
       margin-left: 20px;
@@ -696,6 +718,7 @@
   }
   .caseStudy {
     &__info {
+        translate: 0 100px;
       &--titles {
         h3 {
           font-size: 11px;
@@ -714,6 +737,7 @@
       }
     }
     &__note {
+        translate: 0 -100px;
       h3 {
         margin-top: 330px;
         margin-left: 50px;
@@ -725,6 +749,11 @@
   .deployment {
     h2 {
       font-size: 20px;
+    }
+    &__services{
+        article{
+            max-width: 370px;
+        }
     }
     &__solutions {
       .or {
@@ -805,6 +834,11 @@
   }
 
   .deployment {
+    &__services{
+        article{
+            max-width: 335px;
+        }
+    }
     &__solutions {
       &--info {
         padding-top: 60px;

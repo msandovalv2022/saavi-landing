@@ -76,6 +76,12 @@ footer{
     }
 }
 
+@media screen and (max-width: 669px){
+    footer{
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     footer{
         .footer__name{
