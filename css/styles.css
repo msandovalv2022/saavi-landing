@@ -247,6 +247,17 @@ nav.sticky {
   display: none;
   font-size: 1.2em; }
 
+@media screen and (max-width: 1024px) {
+  .header__nav {
+    padding-left: 50px;
+    padding-right: 50px; }
+    .header__nav--logo img {
+      height: 80px; }
+    .header__nav ul {
+      translate: 80px 0; }
+      .header__nav ul li {
+        margin-right: 20px; } }
+
 @media screen and (max-width: 992px) {
   .header__nav {
     background-color: white;
@@ -412,13 +423,19 @@ footer {
   footer {
     height: 300px; }
     footer .footer__name h2 {
-      font-size: 12px; } }
+      font-size: 12px; }
+    footer .footer__links {
+      width: 300px; }
+      footer .footer__links ul {
+        translate: -70px 0; } }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 320px) {
   footer {
     height: 400px; }
     footer .footer__name h2 {
-      font-size: 11px; } }
+      font-size: 11px; }
+    footer .footer__links {
+      width: 280px; } }
 
 .illuminating {
   translate: 0 -100px;

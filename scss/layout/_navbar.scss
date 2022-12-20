@@ -66,6 +66,25 @@ nav.sticky{
     font-size: 1.2em;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .header__nav{
+        padding-left: 50px;
+        padding-right: 50px;
+        &--logo{
+            img{
+                height: 80px;
+            }
+        }
+        ul{
+            translate: 80px 0;
+            li{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .header__nav{
         background-color: white;
