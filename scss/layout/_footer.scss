@@ -118,3 +118,14 @@ footer{
     
     }
 }
+@media screen and (max-width: 380px) {
+    footer{
+        height: 400px;
+        .footer__name{
+            h2{
+                font-size: 11px;
+            }
+        }
+    
+    }
+}

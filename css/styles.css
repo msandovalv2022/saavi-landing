@@ -414,6 +414,12 @@ footer {
     footer .footer__name h2 {
       font-size: 12px; } }
 
+@media screen and (max-width: 380px) {
+  footer {
+    height: 400px; }
+    footer .footer__name h2 {
+      font-size: 11px; } }
+
 .illuminating {
   translate: 0 -100px;
   z-index: 1;
@@ -947,8 +953,10 @@ footer {
   .caseStudy {
     height: 800px;
     flex-direction: column; }
-    .caseStudy__info--titles {
-      margin-top: 30px; }
+    .caseStudy__info {
+      translate: 0 10px; }
+      .caseStudy__info--titles {
+        margin-top: 30px; }
     .caseStudy__note h3 {
       margin-top: 0px;
       margin-left: 0px;
@@ -964,13 +972,22 @@ footer {
     padding-top: 60px; } }
 
 @media screen and (max-width: 320px) {
+  .caseStudy__note {
+    translate: 0 10px; }
+  .deployment__services article {
+    width: 275px; }
   .deployment__solutions--info {
     padding-top: 60px;
     padding-bottom: 60px; }
     .deployment__solutions--info-cards article div {
-      padding: 0px; }
+      padding: 0px;
+      width: 250px; }
   .contact h3 {
     padding-top: 60px; }
   .contact__cards {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+    .contact__cards div {
+      width: 250px; }
+      .contact__cards div a {
+        font-size: 11px; } }
